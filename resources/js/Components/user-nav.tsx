@@ -17,8 +17,8 @@ import {
 import { User } from "@/types"
 import { Link } from "@inertiajs/react"
 import { PropsWithChildren } from "react"
-  
-  export function UserNav({user}: PropsWithChildren<{user: User}>) {
+
+export function UserNav({user}: PropsWithChildren<{user: User}>) {
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -71,4 +71,4 @@ import { PropsWithChildren } from "react"
         </DropdownMenuContent>
       </DropdownMenu>
     )
-  }
+}
