@@ -26,19 +26,25 @@ export default function Welcome({ auth }: PageProps) {
                             href="/examples/dashboard"
                             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                         >
-                            Customers
+                            Pricing
                         </Link>
                         <Link
                             href="/examples/dashboard"
                             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                         >
-                            Products
+                            About
                         </Link>
                         <Link
                             href="/examples/dashboard"
                             className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                         >
-                            Settings
+                            Blog
+                        </Link>
+                        <Link
+                            href="/examples/dashboard"
+                            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                        >
+                            Contact
                         </Link>
                     </nav>
                     <div className="ml-auto flex items-center space-x-4">
@@ -48,8 +54,8 @@ export default function Welcome({ auth }: PageProps) {
                             className="md:w-[100px] lg:w-[300px]"
                         />
 
-                        {auth.user ? 
-                            <UserNav user={auth.user} /> : 
+                        {auth.user ?
+                            <UserNav user={auth.user} /> :
                             <>
                                 <Button variant="link" asChild>
                                     <Link href={route('register')}>Sign up</Link>

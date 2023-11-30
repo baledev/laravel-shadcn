@@ -4,6 +4,7 @@ import { Link } from '@inertiajs/react';
 import { User } from '@/types';
 import { Search } from '@/Components/search';
 import { UserNav } from '@/Components/user-nav';
+import { MainNav } from '@/Components/main-nav';
 
 export default function Authenticated({ user, header, children }: PropsWithChildren<{ user: User, header?: ReactNode }>) {
 
@@ -15,6 +16,7 @@ export default function Authenticated({ user, header, children }: PropsWithChild
                         <Link href="/">
                             <ApplicationLogo className='w-9 h-9' />
                         </Link>
+                        <MainNav />
                         <div className="ml-auto flex items-center space-x-4">
                             <Search />
                             <UserNav user={user} />
